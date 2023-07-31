@@ -1,0 +1,13 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer {
+    position: "fixed";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: "white";
+    color: rgb(99, 39, 228);
+    text-align: center;
+  }
