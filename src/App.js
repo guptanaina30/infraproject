@@ -6,7 +6,9 @@ import Home from "./component/home";
 import About from "./component/about";
 import Team from "./component/ourTeam";
 import Navbar from "./component/navbar";
-import Footer from "./component/footer";
+
+import TeamDetails from "./component/teamDetails";
+
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/teamdetails" element={<TeamDetails/>} />
       </Routes>
-      <Footer/>
+      
     </>
   );
 }

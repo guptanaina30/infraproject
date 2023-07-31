@@ -1,20 +1,34 @@
 import React from "react";
 
 import Box from "@mui/material/Box";
-// import infrablok from "../assets/frontpage.jpg";
+
 import Grid from "@mui/material/Grid";
-import { Image } from "@mui/icons-material";
+
 const About = () => {
   return (
     <>
-      <h1>About page</h1>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, backgroundColor: "#000000", padding: "20px" }}>
         <Grid container spacing={2}>
-          <Grid item xs={3}>
-            <Image source={require("../assets/backend.jpg")}/>
+          <Grid item xs={4}>
+            {/* <img src={require("../assets/backend.jpg")} alt ="backend"style={{borderRadius:10,marginTop:20,marginLeft:10,width:"30vw"}}/> */}
+
+            <img
+              src={require("../assets/img.jpg")}
+              alt="backend"
+              style={{
+                borderRadius: 10,
+                marginTop: 20,
+                marginLeft: 10,
+                width: "30vw",
+                height: "80vh",
+              }}
+            />
           </Grid>
-          <Grid item xs={9}>
-            <p>
+
+          <Grid item xs={8}>
+            <h2 style={{ color: "white" }}>InfraBlok India Pvt Ltd</h2>
+
+            <p style={{ color: "white" }}>
               Infrablok is the preferred partner for many of the world's leading
               enterprises, SMEs, and technology startups. We specialize in
               delivering innovative solutions that solve enterprise problems
@@ -32,10 +46,38 @@ const About = () => {
               digital solutions to numerous industry verticals worldwide with
               emerging technologies.
             </p>
+
+            <h4 style={{ color: "white" }}>Email : https://infrablok.com/</h4>
+
+            {/* <p style={{color:'white'}}> </p> */}
+
+            <h4 style={{ color: "white" }}>CTO : Sumit Wadhwa</h4>
+
+            {/* <p style={{color:'white'}}>Sahil Thakkar , Vijay Kumar</p> */}
+
+            <h4 style={{ color: "white" }}>
+              Date of Incorporation : 30 August 2022{" "}
+            </h4>
+
+            {/* <p style={{color:'white'}}></p> */}
+
+            <h4 style={{ color: "white" }}>
+              Contact : 7684554536 , 9465734780
+            </h4>
+
+            {/* <p style={{color:'white'}}>7684554536 , 9465734780</p> */}
+
+            <h4 style={{ color: "white" }}>
+              Address : 401, Tower B, Ithum Tower IT Park, Sec 62, Noida Gautam
+              Buddha Nagar UP 201301 IN
+            </h4>
+
+            {/* <p style={{color:'white'}}></p> */}
           </Grid>
         </Grid>
       </Box>
     </>
   );
 };
+
 export default About;
