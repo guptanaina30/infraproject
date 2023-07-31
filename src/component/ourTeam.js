@@ -49,7 +49,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -79,7 +79,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -109,7 +109,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -140,7 +140,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -171,7 +171,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -202,7 +202,7 @@ const Team = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Team Lead</Button>
+             
               <Button size="small">Team Members</Button>
             </CardActions>
           </Card>
@@ -224,7 +224,7 @@ const Team = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Team Lead</Button>
+       
         <Button size="small">Team Members</Button>
       </CardActions>
     </Card>
@@ -244,7 +244,7 @@ const Team = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Team Lead</Button>
+       
         <Button size="small">Team Members</Button>
       </CardActions>
     </Card> */}
