@@ -1,4 +1,4 @@
-
+// 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     access token
 import React from "react";
 import front from "../assets/front.jpg"
 const Home = () => {
