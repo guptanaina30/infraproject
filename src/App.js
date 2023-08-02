@@ -5,22 +5,32 @@ import React from "react";
 import Home from "./component/home";
 import About from "./component/about";
 import Team from "./component/ourTeam";
-import Navbar from "./component/navbar";
 
-import TeamDetails from "./component/teamDetails";
 
+import Project from "./component/project";
+import PageNotFound from "./component/pagenotfound";
+import Layout from "./component/layout";
+
+import ContactData from "./component/contact/contactData";
+import TeamDetails from "./component/teammember/teamDetails";
+// import TeamDetails from "./component/teammember/teamDetails";
 
 function App() {
+  
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/teamdetails" element={<TeamDetails/>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/contact" element={<ContactData/>} />
+          <Route path="/teamdetails/:id" element={<TeamDetails/>} />
+         
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
-      
     </>
   );
 }
