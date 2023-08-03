@@ -2,13 +2,13 @@ import React from "react";
 
 import Card from "@mui/material/Card";
 
-import CardActions from "@mui/material/CardActions";
+// import CardActions from "@mui/material/CardActions";
 
 import CardContent from "@mui/material/CardContent";
 
 import CardMedia from "@mui/material/CardMedia";
 
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 
 import Typography from "@mui/material/Typography";
 
@@ -26,7 +26,7 @@ import marketing from "../assets/marketing.jpg";
 
 import cloud from "../assets/cloud.jpg";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { CardActionArea } from "@mui/material";
 
 const Team = () => {
@@ -136,7 +136,7 @@ const Team = () => {
                 </Typography>
               </CardContent>
 
-              <CardActions>
+              {/* <CardActions>
                 <Button
                   size="small"
                   component={Link}
@@ -144,7 +144,7 @@ const Team = () => {
                 >
                   Team Members
                 </Button>
-              </CardActions>
+              </CardActions> */}
             </Card>
             </CardActionArea>
           </Grid>
