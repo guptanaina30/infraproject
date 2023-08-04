@@ -115,7 +115,7 @@ const Home = () => {
     <>
       <h1>YoutubeData</h1>
 
-      <Box>
+      <Box sx={{paddingLeft: 4}}>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
