@@ -3,7 +3,15 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, CardActionArea, Grid, Stack } from "@mui/material";
+import {
+  Box,
+  Button,
+  CardActionArea,
+  Grid,
+  Input,
+  Stack,
+  Toolbar,
+} from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 // import Grid from "@mui/material";
 // import v1 from "../../assets/video.mp4";
@@ -27,7 +35,9 @@ import p7 from "../../assets/p7.jpg";
 import p8 from "../../assets/p8.jpg";
 import p9 from "../../assets/p9.jpg";
 import p10 from "../../assets/p10.png";
-
+import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 const Home = () => {
   const youtubeData = [
     {
@@ -113,9 +123,39 @@ const Home = () => {
   ];
   return (
     <>
-      <h1>YoutubeData</h1>
+    <Box  style={{position:"fixed"}}>
+      <Toolbar style={{ justifyContent: "space-between",marginBottom:"21px"}}>
+       <div>
+       <Input
+          id="my-input"
+          aria-describedby="my-helper-text"
+          placeholder="Search"
+          style={{
+            border: "2px solid grey",
+            borderRadius: "20px",
+            width: "40vw",
+            marginLeft: "60px",
+          }}
+        />
+        <KeyboardVoiceIcon fontSize="small" style={{marginTop:"12px",paddingLeft:"10px"}}/>
+       </div>
+        <div>
+          <MoreVertIcon style={{paddingRight:"10px"}} fontSize="small"/>
+          <Button
+            style={{
+              border: "2px solid grey",
+              borderRadius: "20px",
+              width: "110px",
+            }}
+            color="primary"
+          >
+            <PersonOutlinedIcon  />
+            Sign In
+          </Button>
+        </div>
+      </Toolbar>
 
-      <Box sx={{paddingLeft: 4}}>
+      <Box  sx={{height:"90vh",width:"83vw",overflow:"auto"}}>
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}
@@ -129,7 +169,7 @@ const Home = () => {
                     component="video"
                     image={item.video}
                     className={item.media}
-                    autoPlay 
+                    autoPlay
                     controls
                     src={item.video}
                     alt="not found"
@@ -183,6 +223,7 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
+      </Box>
       </Box>
     </>
   );
