@@ -3,16 +3,21 @@
 // import Home from "./component/mainSection/home";
 // import TemporaryDrawer from "./component/mainSection/layout";
 
-import HookFroms from "./component/hookform/hookform";
+import HookForms from "./component/hookform.js/hookform";
+// import Layout from "./component/mainSection/layout";
+
+
 
 function App() {
   return (
     <>
-    <HookFroms/>
+    <HookForms/>
     {/* <TemporaryDrawer/> */}
      {/* <Header/>
      <Home/>
      <Addlayout/> */}
+
+     {/* <Layout/> */}
     </>
   );
 }
