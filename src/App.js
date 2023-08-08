@@ -3,7 +3,10 @@
 // import Home from "./component/mainSection/home";
 // import TemporaryDrawer from "./component/mainSection/layout";
 
-import HookForms from "./component/hookform.js/hookform";
+// import FieldArray from "./component/hookform.js/dropdown";
+
+import FieldArray from "./component/hookform.js/arrayField";
+// import HookForms from "./component/hookform.js/hookform";
 // import Layout from "./component/mainSection/layout";
 
 
@@ -11,7 +14,9 @@ import HookForms from "./component/hookform.js/hookform";
 function App() {
   return (
     <>
-    <HookForms/>
+    <FieldArray/>
+    {/* <HookForms/> */}
+    {/* <FieldArray/> */}
     {/* <TemporaryDrawer/> */}
      {/* <Header/>
      <Home/>

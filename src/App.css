@@ -40,3 +40,8 @@
 .redColor{
   color:"red"
 }
+
+.centerfieldArray{
+  justify-content: "center";
+  align-items: center;
+}
